@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <!-- import css -->
+    <link rel="stylesheet" href="components/header/header.css">
+    <link rel="stylesheet" href="components/ticketList/ticketList.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/departamentos.css">
+    <link rel="stylesheet" href="components/footer/footer.css">
+
+  </head>
+  <body>
+    <div class="header-container"></div>
+    <div class="departamentos-header">
+        <h2>Departamentos</h2>
+        <button id="btn-criar-departamento"class="btn-criar-departamento">Criar departamento</button>
+    </div>
+    <div class="departamentos-container"></div>
+    <div style="display: none;" id="criar-departamento-modal">
+        <div class="modal-content modal-departamento-content">
+          <span class="close" id="close-modal-btn">&times;</span>
+          <h2>Criar Departamento</h2>
+          <form>
+            <label for="nome_do_departamento">Nome do Departamento:</label>
+            <input type="text" id="nome_do_departamento" name="nome_do_departamento" required>
+            <button type="submit" class="btn-criar-departamento" id="criar-departamento-btn">Criar</button>
+          </form>
+        </div>
+      </div>
+    <footer id="footer-container"></footer>
+      
+      
+    <script type="module" src="/components/header/header.js"></script>
+    <script type="module" src="/scripts/departamentos.js"></script>
+  </body>
+</html>

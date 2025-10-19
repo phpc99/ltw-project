@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <!-- import css -->
+    <link rel="stylesheet" href="components/header/header.css">
+    <link rel="stylesheet" href="components/ticketList/ticketList.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/statusTicket.css">
+    <link rel="stylesheet" href="components/footer/footer.css">
+
+</head>
+
+<body>
+    <div class="header-container"></div>
+    <div class="status-header">
+        <h2>Status de ticket</h2>
+        <button id="btn-criar-status" class="btn-criar-status">Criar status</button>
+    </div>
+    <div class="status-container"></div>
+    <div style="display: none;" id="criar-status-modal">
+        <div class="modal-content modal-status-content">
+            <span class="close" id="close-modal-btn">&times;</span>
+            <h2>Criar Status</h2>
+            <form>
+                <label for="nome_do_status">Nome do Status:</label>
+                <input type="text" id="nome_do_status" name="nome_do_status" required>
+                <button type="submit" class="btn-criar-status" id="criar-status-btn">Criar</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+          <h2>Criar status</h2>
+          <div>
+            <label for="modal-nome-status">Nome do status:</label>
+            <input type="text" id="modal-nome-status" name="modal-nome-status">
+          </div>
+          <div>
+            <button id="modal-btn-criar-status">Criar</button>
+            <button id="modal-btn-cancelar">Cancelar</button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="status-container">
+        <!-- Os cards dos status serão adicionados aqui -->
+      </div>
+      
+      <div id="modal-editar" class="modal">
+        <div class="modal-content">
+          <h2>Editar status</h2>
+          <div>
+            <label for="modal-editar-nome-status">Nome do status:</label>
+            <input type="text" id="modal-editar-nome-status" name="modal-editar-nome-status">
+          </div>
+          <div class="modal-btns">
+            <button id="modal-btn-salvar">Salvar</button>
+            <button id="modal-btn-cancelar-editar">Cancelar</button>
+          </div>
+        </div>
+      </div>
+      
+
+      <footer id="footer-container"></footer>
+
+    <script type="module" src="/components/header/header.js"></script>
+    <script type="module" src="/scripts/statusTicket.js"></script>
+</body>
+
+</html>

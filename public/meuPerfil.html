@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <!-- import css -->
+    <link rel="stylesheet" href="components/header/header.css">
+    <link rel="stylesheet" href="components/ticketList/ticketList.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/meuPerfil.css">
+    <link rel="stylesheet" href="components/footer/footer.css">
+
+  </head>
+  <body>
+    <div class="header-container"></div>
+    <div class="container">
+        <h1>Meu perfil</h1>
+        <p>Nome de usuário: <span id="nome-usuario"></span></p>
+        <p>E-mail: <span id="email"></span></p>
+        <p>Primeiro nome: <span id="primeiro-nome"></span></p>
+        <p>Último nome: <span id="ultimo-nome"></span></p>
+        <p>Função: <span id="funcao"></span></p>
+        <p id="departamentoP" style="display: none">Departamento: <span id="departamento"></span></p>
+
+        <button id="editarPerfil" class="button">Editar Perfil</button>
+        <button id="editarSenha" class="button">Editar Senha</button>
+
+    </div>
+    <!-- Modal Editar perfil-->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Editar perfil</h2>
+            <form>
+                <label for="nome-usuario">Nome de usuário:</label>
+                <input type="text" id="nome-usuario-modal" name="nome-usuario" pattern="[A-Za-z0-9_]{1,15}"required class="input-field">
+    
+                <label for="email">E-mail:</label>
+                <input type="email" id="email-modal" name="email" required class="input-field">
+    
+                <label for="primeiro-nome">Primeiro nome:</label>
+                <input type="text" id="primeiro-nome-modal" name="primeiro-nome" required class="input-field">
+    
+                <label for="ultimo-nome">Último nome:</label>
+                <input type="text" id="ultimo-nome-modal" name="ultimo-nome" required class="input-field">
+    
+                <!-- <label for="senha">Senha:</label>
+                <input type="password" id="senha-modal" name="senha" required class="input-field"> -->
+    
+                <!-- <label for="funcao">Função:</label>
+                <select id="funcao-modal" name="funcao" required class="input-field">
+                    <option value="0">Cliente</option>
+                    <option value="1">Agente</option>
+                    <option value="2">Administrador</option>
+                </select> -->
+    
+                <button type="submit" id="salvar" class="button">Salvar</button>
+            </form>
+        </div>
+    </div>
+    <!-- Modal para mudar senha -->
+    <div id="modal-mudar-senha" class="modal">
+      <div class="modal-content">
+        <span class="close" id="close">&times;</span>
+        <h2>Mudar senha</h2>
+        <form>
+          <label for="senha-atual">Senha atual:</label>
+          <input type="password" id="senha-atual" name="senha-atual" required class="input-field">
+
+          <label for="nova-senha">Nova senha:</label>
+          <input type="password" id="nova-senha" name="nova-senha" required class="input-field">
+
+          <label for="confirmar-nova-senha">Confirmar nova senha:</label>
+          <input type="password" id="confirmar-nova-senha" name="confirmar-nova-senha" required class="input-field">
+
+          <button type="submit" id="salvar-senha" class="button">Salvar</button>
+        </form>
+      </div>
+    </div>
+
+
+    <footer id="footer-container"></footer>
+  
+    <script>
+     
+      // Atualize os elementos HTML com os dados do usuário
+
+    </script>
+
+    <script type="module" src="/components/header/header.js"></script>
+    <script type="module" src="/scripts/meuPerfil.js"></script>
+  </body>
+</html>

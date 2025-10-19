@@ -1,0 +1,151 @@
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+#tickets {
+  margin: 0 auto;
+  width: 80%;
+  min-height: 100vh;
+
+}
+
+.ticket {
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.ticket h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.ticket p {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.ticket-descricao {
+  font-weight: bold;
+}
+
+.ticket-criado-em {
+  color: #777;
+}
+
+.ticket button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.ticket button:hover {
+  background-color: #3e8e41;
+}
+
+.ticket button:focus {
+  outline: none;
+}
+
+
+.ticket-resposta-hora {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.ticket-resposta {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.ticket-hora-resposta {
+  font-size: 14px;
+  color: #777;
+  margin-left: 10px;
+}
+
+.ticket button {
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #f0f0f0;
+  border: none;
+  color: #333;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.ticket button:hover {
+  background-color: #ddd;
+}
+
+.ticket button:focus,
+.ticket button:active {
+  outline: none;
+}
+
+.ticket button.active {
+  background-color: #ddd;
+}
+
+.ticket button.active + .ticket-respostas {
+  display: block;
+}
+
+
+/* Estilo para o campo de texto */
+input[type="text"] {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 8px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Estilo para a lista de sugestões */
+ul {
+  margin-top: 0;
+}
+
+li {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+
+li:hover {
+  background-color: #f2f2f2;
+}
+
+/* Estilo para a exibição das hashtags selecionadas */
+
+
+span {
+  background-color: #f2f2f2;
+  color: #333;
+  border-radius: 4px;
+  padding: 4px 8px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+span:hover {
+  background-color: #e6e6e6;
+}
+.agent-text {
+  font-weight: bold;
+}
+

@@ -1,0 +1,120 @@
+/* Estilo para a section de status */
+.status-header {
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  .status-header h2 {
+    margin: 0;
+  }
+  
+  .btn-criar-status {
+    background-color: #333;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+  
+  .btn-criar-status:hover {
+    background-color: #555;
+  }
+  
+  /* Estilo para os cards de status */
+  .status-container {
+    /* display: flex; */
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 1rem;
+    min-height: 50vh;
+
+  }
+  
+  .status-card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px #ccc;
+    /* flex-basis: calc(33.33% - 1rem); */
+    margin-bottom: 1rem;
+    padding: 1rem;
+    /* max-height: 500px; */
+    /* overflow: auto; */
+  }
+  
+  
+  .status-card h3 {
+    margin: 0;
+  }
+  
+  .status-card p {
+    margin: 0;
+  }
+  .status-card-btns{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  /* Estilo para o modal */
+  .modal {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px #ccc;
+    padding: 1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 400px;
+    width: 80%;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  #modal-btn-salvar, #modal-btn-criar-status, #btn-criar-status, .btn-editar {
+    background-color: #0077b5;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  #modal-btn-cancelar, .btn-excluir {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+  }

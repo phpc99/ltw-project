@@ -1,0 +1,114 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f7f7f7;
+  /* colocar box-shadow apenas na parte de baixo */
+
+}
+
+.user-button {
+  display: flex;
+}
+
+.user-button > * {
+  margin-right: 10px;
+}
+
+
+.social-network-logo img {
+  width: 100px;
+  height: auto;
+}
+
+.user-button {
+  position: relative;
+}
+
+.user-menu-button {
+  background-color: #FFF;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.user-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 200px;
+  background-color: #FFF;
+  border: 1px solid #DDD;
+  padding: 10px;
+  list-style: none;
+  text-align: left;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.2s linear;
+}
+
+.user-menu li {
+  margin-bottom: 10px;
+}
+
+.user-menu a {
+  color: #333;
+  text-decoration: none;
+  display: block;
+  padding: 5px;
+}
+
+.user-menu a:hover {
+  background-color: #EEE;
+}
+
+.user-menu-button[aria-expanded="true"]+.user-menu {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+
+.hashtag-selector {
+  margin: 10px 0;
+}
+
+.hashtag-selector label {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.hashtag-selector input[type="checkbox"] {
+  margin-right: 5px;
+  margin-bottom: 10px;
+}
+
+.modal-body textarea {
+  resize: vertical;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn {
+  padding: 10px;
+  background-color: #007bff;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.show {
+  display: flex;
+  flex-direction: column;
+}
