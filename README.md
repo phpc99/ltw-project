@@ -41,12 +41,6 @@ The minimum expected set of requirements were the following:
 
 - HTML, CSS, PHP, Javascript, Ajax/JSON, PDO/SQL (using sqlite)
 
-### Contributors 
-
-- David Ferreira (up202006302)
-- Luiz Queiroz (up202102362)
-- Pedro Camargo (up202102365)
-
 ### Instructions
    
    
@@ -89,3 +83,9 @@ The minimum expected set of requirements were the following:
 
 - FAQ (Adm and Agent View):
 ![FAQ for adm agent](images/faq_adm_agent.png)
+
+# Authors
+
+- David Ferreira (up202006302)
+- Luiz Queiroz (up202102362)
+- Pedro Camargo (up202102365)
